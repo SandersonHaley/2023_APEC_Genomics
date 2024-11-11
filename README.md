@@ -27,35 +27,41 @@ Additional processing was done on all genomes using the following scripts:
 - Fix the starting point for each genome using *prep_fixstart.sh* and *fixstart_genomes.sh* which uses circulator.
 ## Genome_QC
 During the process of making the workflows in *Hybrid_Genome_Assembly* and *Long_Read_Assembling_Polishing*. The quality of genomes was checked continuously using quast, nanostat and fastqc. The shell scripts (*nanostat.sh*, *quast.sh*, and *fastqc.sh*) show how to run these programs seperately on the genomes. The Jupyter Notebooks (*EcoliSet2_Quast.ipynb*, *Ecoli_Set1_quast.ipynb*, *nanostat_set_2.ipynb*) show how these results were gathered together in one csv file using the python libraries: pandas and pathlib.
-
 ## Genomic_Element_Detection
 ## Refseq_Plasmid_Host_Range
-
+This folder contains the scripts  (*diamond.sh* and *diamond_setup.sh*) required to get a more detailed host range of plasmids detected using MOB-suite. It uses the fasta files of the plasmid sequences, the refseq databases and diamond. 
 ## Extracting_Genes_Genbank
+The two Python scripts in this folder (*extractgenesfromgenbackProtein.py* and *extractgenesfromgenbankDNA.py*) do similar things and extract sequences (either DNA or protein) from genbank genome files based on the annotations using the puthon libraries: arparse and Bio.
 ## Phylogenetic_Analysis
 ## EvolCCM_Network_Analysis
+Co-evolutionary analysis was done using EvolCCM and this was used to create networks showing the colocation/cotransfer of different genes from a co-ecvolutionary standpoint. The running of EvolCCM was done by a collaborator and these scripts are just used to filter the results (09122023_evolccm_convert_table.ipynb) using pandas and generate the networks from the results (networks.py) using the python libraries: argparse, requests and pandas.This analysis was subsequently removed from the final analysis of the genomes.
+	
 # Software
 ## Stand-alone Programs
--Nanostat
--Porechop
--Filtlong
--Flye
--Quast
--Fastp
--Unicycler
--bwa
--samtools
--pilon
--nucmer
--snippy
--bgzip
--tabix
--vcftools
--circulator
+- Nanostat
+- Porechop
+- Filtlong
+- Flye
+- Quast
+- Fastp
+- Unicycler
+- bwa
+- samtools
+- pilon
+- nucmer
+- snippy
+- bgzip
+- tabix
+- vcftools
+- circulator
+- diamond
 
 ## Python Libraries
--pandas
--pathlib
+- pandas
+- pathlib
+- argparse
+- Bio
+- requests
 
 # Author
 **Main Contributor** \
