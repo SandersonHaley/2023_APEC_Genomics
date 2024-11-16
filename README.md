@@ -58,7 +58,7 @@ In *05012023_AMR_stats_Drug_Class_vs_Source.ipynb*, the following Python librari
 In *07052023_newBACMET_GI_phage_data_analysis.ipynb*, a newer run of ARETE containing more elements to be detected including a refined BACMET search, and searches for Genomic Islands (total number) and phage were analyzed using the following Python libraries: pandas, numpy, statsmodels, scikit_posthocs, itertools, statannotations, matplotlib and seaborn. The total number of these genomic elements were compared across phylogroup, source and outbreak using independent t-test and this was illustrated in graphs. \
 \
 In *VIrulence factor Categories.ipynb*, the following Python libraries were used: pandas, re, seaborn and matplotlib. The distribution of virulence factors in different categories was determined and it was illustrated in a pie chart. \
-\
+
 
 ## Refseq_Plasmid_Host_Range
 This folder contains the scripts  (*diamond.sh* and *diamond_setup.sh*) required to get a more detailed host range of plasmids detected using MOB-suite. It uses the fasta files of the plasmid sequences, the refseq databases and diamond. 
