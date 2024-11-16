@@ -3,7 +3,7 @@ This repo contains all of the scripts for data processing and analysis for the A
 # Workflow
 ## Hybrid_Genome_Assembly
 This folder has the scripts required to do hybrid bacteria (E.coli) assemblies using Illumina and Nanopore reads. The *hybridassemblywaffles.sh* includes the workflow for hibrid assembly from raw reads to complete assemblies and the *prep-hybrid-assembly.sh* allows you to repeat the assembly scripts on slurm for all the read sets for the genomes you are assembling.
-Steps in the **hybridassemblywaffles.sh* script: \
+### Steps in the **hybridassemblywaffles.sh* script: 
 1. Assess the quality of the Nanopore long reads with Nanostat.
 2. Trim the adaptors from the Nanopore Long reads with porechop.
 3. Filter out bad reads and long reads below a certain length with filtlong.
@@ -50,7 +50,6 @@ In *03092023_EcoliARETE_Basic_Stats.ipynb*, the pandas Python library were used 
 \
 In *03092023_EcoliARETE_plasmiddiagram.ipynb*, the following Python libraries were used: pandas, numpy, statsmodels, scikit_posthocs, itertools, statannotations, matplotlib and seaborn. This notebook was used to generate bar plots that represent the different categories of plasmid based on predicted plasmids and mob-suite predicted host ranges.\
 \
-
 In *04212023_Refseq_host_range.ipynb*, the following python libraries were used: pandas, numpy, matplotlib, and seaborn. The refseq results to determine additonal more accurate hosts of the plamsids were culminated and a bar graph was made to view the distribution of the plasmids in the different hosts. \
 \
 In *05012023_AMR_stats_Drug_Class_vs_Source.ipynb*, the following Python libraries were used: pandas, numpy, statsmodels, scikit_posthocs, itertools, statannotations, matplotlib and seaborn. All genomes resistance to each drug classes were compared using an independent T-test and the results are illustrated in graphs. \
