@@ -73,46 +73,46 @@ Co-evolutionary analysis was done using EvolCCM and this was used to create netw
 	
 # Software
 ## Stand-alone Programs
-- Nanostat
-- Porechop
-- Filtlong
-- Flye
-- Quast
-- Fastp
-- Unicycler
-- bwa
-- samtools
-- pilon
-- nucmer
-- snippy
-- bgzip
-- tabix
-- vcftools
-- circulator
-- diamond
-- IQtree
-- Fasttree
-- Neptune
+- Nanostat v.1.1.2
+- Porechop v.0.2.4
+- Filtlong v0.2.1
+- Flye v.2.9.5
+- Quast v.5.3.0
+- Fastp v.0.24.0
+- Unicycler v.0.5.1
+- bwa v.0.7.18
+- samtools v.1.21
+- pilon v.1.24
+- MUMmer v.3.23 
+- snippy v.4.6.0
+- HTSlib v.1.21
+- vcftools v.0.1.16
+- circlator v.1.5.5
+- diamond v.2.1.10
+- IQtree v.2.3.6
+- Fasttree v.2.1.11
+- Neptune v.2.0.0
+- IslandCompare v.0.0.16
 
 ## Python Libraries
-- pandas
-- pathlib
-- argparse
-- Bio
-- requests
-- numpy
-- matplotlib
-- seaborn
-- networkx
-- ete3
-- dendropy
-- scipy
-- plotly
-- statsmodels
-- scikit_posthocs
-- itertools
-- statannotations
-- fastcluster
+- pandas v.2.2.3
+- pathlib v.1.0.1
+- argparse v.1.4.0
+- Bio v.1.84
+- requests v.2.32.3
+- numpy v.2.1.3
+- matplotlib v.3.9.2
+- seaborn v.0.13.2
+- networkx v.3.4.2
+- ete3 v.3.1.2
+- dendropy v.5.0.1
+- scipy v.1.14.1
+- plotly v.5.24.1
+- statsmodels v.0.14.4
+- scikit_posthocs v.0.7.0
+- itertools v.3.13.0
+- statannotations v.0.6.0
+- fastcluster v.1.2.6
 
 # Author
 **Main Contributor** \
@@ -125,3 +125,43 @@ haley.sanderson@agr.gc.ca or haley.sanderson.092018@gmail.com
 Please view the licence [here](LICENSE)
 # Notes
 # References
+# Software
+## Stand-alone Programs
+- Nanostat:De Coster, W., D’hert, S., Schultz, D. T., Cruts, M., & Van Broeckhoven, C. (2018). NanoPack: visualizing and processing long-read sequencing data. Bioinformatics, 34(15), 2666-2669.
+- Porechop: https://github.com/rrwick/Porechop
+- Filtlong: https://github.com/rrwick/Filtlong
+- Flye: Kolmogorov, M., Yuan, J., Lin, Y., & Pevzner, P. A. (2019). Assembly of long, error-prone reads using repeat graphs. Nature biotechnology, 37(5), 540-546.
+- Quast: Gurevich, A., Saveliev, V., Vyahhi, N., & Tesler, G. (2013). QUAST: quality assessment tool for genome assemblies. Bioinformatics, 29(8), 1072-1075.
+- Fastp: Chen, S., Zhou, Y., Chen, Y., & Gu, J. (2018). fastp: an ultra-fast all-in-one FASTQ preprocessor. Bioinformatics, 34(17), i884-i890.
+- Unicycler: Wick, R. R., Judd, L. M., Gorrie, C. L., & Holt, K. E. (2017). Unicycler: resolving bacterial genome assemblies from short and long sequencing reads. PLoS computational biology, 13(6), e1005595.
+- bwa: https://github.com/lh3/bwa
+- samtools: http://www.htslib.org/
+- pilon: Walker, B. J., Abeel, T., Shea, T., Priest, M., Abouelliel, A., Sakthikumar, S., ... & Earl, A. M. (2014). Pilon: an integrated tool for comprehensive microbial variant detection and genome assembly improvement. PloS one, 9(11), e112963.
+- MUMmer: Marçais, G., Delcher, A. L., Phillippy, A. M., Coston, R., Salzberg, S. L., & Zimin, A. (2018). MUMmer4: A fast and versatile genome alignment system. PLoS computational biology, 14(1), e1005944.
+- snippy: https://github.com/tseemann/snippy
+- HTSlib: http://www.htslib.org/
+- vcftools: Danecek, P., Auton, A., Abecasis, G., Albers, C. A., Banks, E., DePristo, M. A., ... & 1000 Genomes Project Analysis Group. (2011). The variant call format and VCFtools. Bioinformatics, 27(15), 2156-2158.
+- circlator: Hunt, M., Silva, N. D., Otto, T. D., Parkhill, J., Keane, J. A., & Harris, S. R. (2015). Circlator: automated circularization of genome assemblies using long sequencing reads. Genome biology, 16, 1-10.
+- diamond: Buchfink, B., Xie, C., & Huson, D. H. (2015). Fast and sensitive protein alignment using DIAMOND. Nature methods, 12(1), 59-60.
+- IQtree: Nguyen, L. T., Schmidt, H. A., Von Haeseler, A., & Minh, B. Q. (2015). IQ-TREE: a fast and effective stochastic algorithm for estimating maximum-likelihood phylogenies. Molecular biology and evolution, 32(1), 268-274.
+- Fasttree: Price, M. N., Dehal, P. S., & Arkin, A. P. (2009). FastTree: computing large minimum evolution trees with profiles instead of a distance matrix. Molecular biology and evolution, 26(7), 1641-1650.
+- Neptune: Marinier, E., Zaheer, R., Berry, C., Weedmark, K. A., Domaratzki, M., Mabon, P., ... & Van Domselaar, G. (2017). Neptune: a bioinformatics tool for rapid discovery of genomic variation in bacterial populations. Nucleic acids research, 45(18), e159-e159.
+- IslandCompare: Gray, K. L., Woods, N., & Brinkman, F. S. (2023). IslandCompare CLI Tool Supplementary Code Snapshot. Resource, 2023, 02-09.
+- pandas: McKinney, W. (2011). pandas: a foundational Python library for data analysis and statistics. Python for high performance and scientific computing, 14(9), 1-9.
+- pathlib: https://github.com/python/cpython/blob/main/Doc/library/pathlib.rst
+- argparse: https://docs.python.org/3/library/argparse.html
+- Bio: https://biopython.org/
+- requests: https://pypi.org/project/requests/
+- numpy: Harris, C. R., Millman, K. J., Van Der Walt, S. J., Gommers, R., Virtanen, P., Cournapeau, D., ... & Oliphant, T. E. (2020). Array programming with NumPy. Nature, 585(7825), 357-362.
+- matplotlib: Hunter, J., & Dale, D. (2007). The matplotlib user’s guide. Matplotlib 0.90. 0 user’s guide.
+- seaborn: Waskom, M. L. (2021). Seaborn: statistical data visualization. Journal of Open Source Software, 6(60), 3021.
+- networkx: Hagberg, A., Swart, P. J., & Schult, D. A. (2008). Exploring network structure, dynamics, and function using NetworkX (No. LA-UR-08-05495; LA-UR-08-5495). Los Alamos National Laboratory (LANL), Los Alamos, NM (United States).
+- ete3: Huerta-Cepas, J., Serra, F., & Bork, P. (2016). ETE 3: reconstruction, analysis, and visualization of phylogenomic data. Molecular biology and evolution, 33(6), 1635-1638.
+- dendropy: Sukumaran, J., & Holder, M. T. (2010). DendroPy: a Python library for phylogenetic computing. Bioinformatics, 26(12), 1569-1571.
+- scipy: Virtanen, P., Gommers, R., Oliphant, T. E., Haberland, M., Reddy, T., Cournapeau, D., ... & Van Mulbregt, P. (2020). SciPy 1.0: fundamental algorithms for scientific computing in Python. Nature methods, 17(3), 261-272. 
+- plotly: https://pypi.org/project/plotly/
+- statsmodels: Seabold, S., & Perktold, J. (2010). Statsmodels: econometric and statistical modeling with python. SciPy, 7(1). 
+- scikit_posthocs: https://pypi.org/project/scikit-posthocs/
+- itertools: https://github.com/python/cpython/blob/main/Modules/itertoolsmodule.c
+- statannotations: https://pypi.org/project/statannotations/0.3.2/
+- fastcluster: Müllner, D. (2013). fastcluster: Fast hierarchical, agglomerative clustering routines for R and Python. Journal of Statistical Software, 53, 1-18.
