@@ -125,8 +125,6 @@ haley.sanderson@agr.gc.ca or haley.sanderson.092018@gmail.com
 Please view the licence [here](LICENSE)
 # Notes
 # References
-# Software
-## Stand-alone Programs
 - Nanostat:De Coster, W., D’hert, S., Schultz, D. T., Cruts, M., & Van Broeckhoven, C. (2018). NanoPack: visualizing and processing long-read sequencing data. Bioinformatics, 34(15), 2666-2669.
 - Porechop: https://github.com/rrwick/Porechop
 - Filtlong: https://github.com/rrwick/Filtlong
