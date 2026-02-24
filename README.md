@@ -1,5 +1,5 @@
 # 2023_APEC_Genomics
-This repo contains all of the scripts for data processing and analysis for the APEC genomics manuscript.
+This repo contains all of the scripts for data processing and analysis for the APEC genomics manuscript using the 245 sample set.
 # Workflow
 ## Hybrid_Genome_Assembly
 This folder has the scripts required to do hybrid bacteria (E.coli) assemblies using Illumina and Nanopore reads. The *hybridassemblywaffles.sh* includes the workflow for hibrid assembly from raw reads to complete assemblies and the *prep-hybrid-assembly.sh* allows you to repeat the assembly scripts on slurm for all the read sets for the genomes you are assembling.
