@@ -69,7 +69,14 @@ This folder contains the scripts related to the phylogenetic analysis of the gen
 Neptune (*neptune.sh*)was also used to compare the group of genomes with the same phylogroups to see which genes may be present in one group but not in any of the other identified groups.
 ## EvolCCM_Network_Analysis
 Co-evolutionary analysis was done using EvolCCM and this was used to create networks showing the colocation/cotransfer of different genes from a co-ecvolutionary standpoint. The running of EvolCCM was done by a collaborator and these scripts are just used to filter the results (09122023_evolccm_convert_table.ipynb) using pandas and generate the networks from the results (networks.py) using the python libraries: argparse, requests and pandas.This analysis was subsequently removed from the final analysis of the genomes.
-	
+
+## PacBio Analysis
+Direcotry containing the scripts used to:
+1.) Assemble the genome
+2.) Perform Plasmid detection/Antimicrobial resistance gene detection
+3.) Aggregate the plasmid data (length and name of plasmid type) together
+4.) Tree (UPGMA) create from Panaroo output.
+
 # Software
 ## Stand-alone Programs
 - Nanostat v.1.1.2
@@ -121,10 +128,10 @@ Agriculture and Agri-Food Canada \
 Haley Sanderson Consulting \
 haley.sanderson@agr.gc.ca or haley.sanderson.092018@gmail.com
 
-**Additional Contributions By**
+**Additional Contributions By** \
 Sylvia Li \
 MSc student \ 
-Vaccine and Infectious Disease Organization (VIDO)/University of Saskatchewan \
+Vaccine and Infectious Disease Organization (VIDO), University of Saskatchewan \
 Sylvia.li254@gmail.com
 
 # License
