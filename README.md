@@ -72,10 +72,10 @@ Co-evolutionary analysis was done using EvolCCM and this was used to create netw
 
 ## PacBio Analysis
 Direcotry containing the scripts used to:
-1.) Assemble the genome
-2.) Perform Plasmid detection/Antimicrobial resistance gene detection
-3.) Aggregate the plasmid data (length and name of plasmid type) together
-4.) Tree (UPGMA) create from Panaroo output.
+1. Assemble the genome
+2. Perform Plasmid detection/Antimicrobial resistance gene detection
+3. Aggregate the plasmid data (length and name of plasmid type) together
+4. Tree (UPGMA) create from Panaroo output.
 
 # Software
 ## Stand-alone Programs
