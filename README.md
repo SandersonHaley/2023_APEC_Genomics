@@ -120,6 +120,13 @@ Bioinformatics Programmer \
 Agriculture and Agri-Food Canada \
 Haley Sanderson Consulting \
 haley.sanderson@agr.gc.ca or haley.sanderson.092018@gmail.com
+
+**Additional Contributions By**
+Sylvia Li \
+MSc student \ 
+Vaccine and Infectious Disease Organization (VIDO)/University of Saskatchewan \
+Sylvia.li254@gmail.com
+
 # License
 Please view the licence [here](LICENSE)
 # Notes
