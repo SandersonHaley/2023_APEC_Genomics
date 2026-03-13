@@ -73,16 +73,16 @@ Co-evolutionary analysis was done using EvolCCM and this was used to create netw
 ## PacBio_Analysis
 Direcotry containing the scripts used to:
 1. Assemble the genome. AssembleFilters.sh
-  1. Flye with --pacbio-hifi,  --genome-size 5m, and  --asm-coverage 50 parameters
+  * Flye with --pacbio-hifi,  --genome-size 5m, and  --asm-coverage 50 parameters
 3. Perform Plasmid detection/Antimicrobial resistance/virulence factor gene detection. Plasmid_check.sh, CARD_script.sh, AMR_script.sh
-  1. Plasmid_check.sh: mob_suite docker container was executed for each sample
-  2. CARD_script.sh: RGI docker container was executed for each sample as well 
-  3. AMR_script.sh:  amrfinder with --ident_min 0.9 --coverage_min 0.5 and abricate --db vfdb --minid 80 --mincov 80
+  *. Plasmid_check.sh: mob_suite docker container was executed for each sample
+  *. CARD_script.sh: RGI docker container was executed for each sample as well 
+  *. AMR_script.sh:  amrfinder with --ident_min 0.9 --coverage_min 0.5 and abricate --db vfdb --minid 80 --mincov 80
     1. Abricate and amrfinder were loaded from USASK's HPC (PLATO) for usage. no download necesary 
 5. Aggregate the plasmid data (length and name of plasmid type) together. length_mobrecon_comparison.py. 
-  1. length_mobrecon_comparison.py. Goes through all samples and their mobsuite output and aggregates the plasmid data together through Pandas.
+  *. length_mobrecon_comparison.py. Goes through all samples and their mobsuite output and aggregates the plasmid data together through Pandas.
 6. Tree (UPGMA) create from Panaroo output. cluster.py
-  1. cluster.py: Creates a phylogenetic tree from the panaroo output of data.
+  *. cluster.py: Creates a phylogenetic tree from the panaroo output of data.
 
 # Software
 ## Stand-alone Programs
