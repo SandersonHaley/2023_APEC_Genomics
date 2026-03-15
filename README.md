@@ -71,18 +71,23 @@ Neptune (*neptune.sh*)was also used to compare the group of genomes with the sam
 Co-evolutionary analysis was done using EvolCCM and this was used to create networks showing the colocation/cotransfer of different genes from a co-ecvolutionary standpoint. The running of EvolCCM was done by a collaborator and these scripts are just used to filter the results (09122023_evolccm_convert_table.ipynb) using pandas and generate the networks from the results (networks.py) using the python libraries: argparse, requests and pandas.This analysis was subsequently removed from the final analysis of the genomes.
 
 ## PacBio_Analysis
-Direcotry containing the scripts used to:
-1. Assemble the genome. AssembleFilters.sh
-  * Flye with --pacbio-hifi,  --genome-size 5m, and  --asm-coverage 50 parameters
-3. Perform Plasmid detection/Antimicrobial resistance/virulence factor gene detection. Plasmid_check.sh, CARD_script.sh, AMR_script.sh
-  *. Plasmid_check.sh: mob_suite docker container was executed for each sample
-  *. CARD_script.sh: RGI docker container was executed for each sample as well 
-  *. AMR_script.sh:  amrfinder with --ident_min 0.9 --coverage_min 0.5 and abricate --db vfdb --minid 80 --mincov 80
-    1. Abricate and amrfinder were loaded from USASK's HPC (PLATO) for usage. no download necesary 
-5. Aggregate the plasmid data (length and name of plasmid type) together. length_mobrecon_comparison.py. 
-  *. length_mobrecon_comparison.py. Goes through all samples and their mobsuite output and aggregates the plasmid data together through Pandas.
-6. Tree (UPGMA) create from Panaroo output. cluster.py
-  *. cluster.py: Creates a phylogenetic tree from the panaroo output of data.
+
+Directory containing the scripts used to:
+
+1. **Assemble the genome.** `AssembleFilters.sh`
+   - Flye with `--pacbio-hifi`, `--genome-size 5m`, and `--asm-coverage 50` parameters
+
+2. **Perform Plasmid detection/Antimicrobial resistance/virulence factor gene detection.** `Plasmid_check.sh`, `CARD_script.sh`, `AMR_script.sh`
+   - `Plasmid_check.sh`: MOB-suite Docker container was executed for each sample
+   - `CARD_script.sh`: RGI Docker container was executed for each sample
+   - `AMR_script.sh`: AMRFinder with `--ident_min 0.9 --coverage_min 0.5` and Abricate `--db vfdb --minid 80 --mincov 80`
+     - Abricate and AMRFinder were loaded from USASK's HPC (PLATO) for usage; no download necessary
+
+3. **Aggregate the plasmid data** (length and name of plasmid type) together. `length_mobrecon_comparison.py`
+   - `length_mobrecon_comparison.py`: Goes through all samples and their MOB-suite output and aggregates the plasmid data together using Pandas
+
+4. **Tree (UPGMA) create from Panaroo output.** `cluster.py`
+   - `cluster.py`: Creates a phylogenetic tree from the Panaroo output of data
 
 # Software
 ## Stand-alone Programs
