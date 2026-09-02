@@ -1,0 +1,3 @@
+[submodule "Ecoli_transcluster"]
+	path = Ecoli_transcluster
+	url = https://github.com/Sylvial-00/Ecoli_transcluster
