@@ -89,6 +89,10 @@ Directory containing the scripts used to:
 4. **Tree (UPGMA) create from Panaroo output.** `cluster.py`
    - `cluster.py`: Creates a phylogenetic tree from the Panaroo output of data
 
+## Ecoli_transcluster
+   - Transcluster analysis. A repository connected to this main project repository. All scripts and explanation of scripts are stored in Ecoli_transcluster repository.
+   - Click the folder to see the analysis documentation and scripts.
+  
 # Software
 ## Stand-alone Programs
 - Nanostat v.1.1.2
